@@ -33,13 +33,19 @@
             text-align: center;
         }
 
-        hr {  
+        .hr-thick {  
             top: 2px; 
             border: none; 
             height: 2px; 
             background: black; 
             margin-bottom: 5px; 
         } 
+
+        .container {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 
@@ -47,10 +53,11 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <section class='container'>
     <header style='margin-left:5px'>Home Page</header>
-    <hr>
-    <h1 style="text-align: center;font-family: monospace;">Thai Vegan</h1>
     <hr />
+    <h1 style="text-align: center;font-family: monospace;">Thai Vegan</h1>
+    <hr class='hr-thick'/>
     <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
     <nav>
         <p>
@@ -59,19 +66,20 @@
                 <a class='nav' href="Contact.html">Contact Us</a></span>
         </p>
     </nav>
-    <hr />
+    <hr class='hr-thick'/>
     <figure class="item">
         <img src="images/green-curry.jpg" />
         <figcaption >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur <br/>id amet quidem esse. Ipsum molestias necessitatibus voluptatibus<br/> voluptatum, eos laboriosam reiciendis deserunt quibusdam, culpa<br/> 
         </figcaption>
     </figure>
-    <hr>
+    <hr class='hr-thick'/>
 <footer>
     <p>123 Main St, Artichoke, NM, 77777 <br/><br/>
     Telephone: 555-5555</p>
 </footer>
     <script src="" async defer></script>
+</section>
 </body>
 
 </html>

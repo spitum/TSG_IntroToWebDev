@@ -1,0 +1,68 @@
+/*
+Creator: Spitum Daruwalla   
+Date created: 002/08/2020
+Date last modified: 02/08/2020
+*/
+
+
+footer {
+    text-align: center;
+}
+
+header {
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    justify-content:flex-start;  
+}
+
+nav .btn {
+/* background-color: #5b7d87; */
+/* color: #fef9ff;  */
+margin: 5px;
+}
+
+nav .btn:hover {
+    font-weight:bold;
+}
+
+nav .btn:visited {
+    color: black;    
+}
+
+nav .btn:active {
+    color: red; 
+    text-decoration: none;
+}
+
+figure {
+    background-color: beige;
+}
+figure.item {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+/* footer 
+{
+    text-align: center;
+} */
+
+.hr-thick {  
+    top: 2px; 
+    border: none; 
+    height: 2px; 
+    background: black; 
+    margin-bottom: 5px; 
+} 
+
+.container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

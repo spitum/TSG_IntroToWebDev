@@ -12,68 +12,43 @@
     <title>Menu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
     <style>
-        /* #navbar {
-            padding: 0px;
-        } */
-
-        .nav {
-            display: inline-block;
-            margin-left: 10px;
+        body {
+            background-color: beige;
         }
 
-        footer {
+
+        .container-fluid {
+            font-size: 20px;
+            min-height: 200px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
             text-align: center;
         }
 
-        .hr-thick {
-            top: 2px;
-            border: none;
-            height: 2px;
-            background: black;
-            margin-bottom: 5px;
+
+        .beverages {
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            width: 25%;
+            /* min-height: 40px; */
+            text-align: justify;
         }
 
-        .container {
+        thead tr {
+            text-decoration: underline;
+        }
+
+        .bottom {
             width: 75%;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .wrap {
-            width: 100%;
-            overflow: auto;
-        }
-
-        .fleft {
-            float: left;
-            width: 33%;
-            height: 300px;
-            text-align: center;
-            padding: 10px 1px 0px 0px;
-        }
-
-        .fcenter {
-            float: left;
-            width: 33%;
-            height: 300px;
-            margin-left: 0.25%;
-            text-align: center;
-            padding: 10px 1px 0px 0px;
-        }
-
-        .fright {
-            float: right;
-            height: 300px;
-            width: 33.5%;
-            text-align: center;
-            padding: 10px 1px 0px 0px;
-
-        }
-
-        span {
-            text-align: justify;
         }
     </style>
 </head>
@@ -83,50 +58,83 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <section class='container'>
-        <header style='margin-left:5px'>Menu</header>
+        <header>Menu</header>
         <hr />
         <h1 style="text-align: center;font-family: monospace;">Thai Vegan</h1>
         <hr class='hr-thick' />
         <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
         <nav>
-            <p>
-                <span class='nav'> <a class='nav' href="index.html">Home</a>
-                    <a class='nav' href="Menu.html">Menu</a>
-                    <a class='nav' href="Contact.html">Contact Us</a></span>
-            </p>
+            <a class="btn order-1" href="index.html">Home</a>
+            <a class='btn  order-2' href="Menu.html">Menu</a>
+            <a class="btn order-3" href="Contact.html">Contact Us</a>
         </nav>
         <hr class='hr-thick' />
-        <div class="wrap">
-            <div class="fleft">
+        <div class="container-fluid">
+            <div class="item1">
                 <p><strong>Pad Thai</strong><br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quae
                     rerum, quasi dolores maxime doloremque praesentium ducimus reiciendis nam repudiandae.<br>$7.95</p>
-
+            </div>
+            <div class='item2'>
                 <p><strong>Thai Curry</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
                     nesciunt error quas itaque at soluta eaque laborum earum voluptatibus quia?<br>$9.95</p>
 
             </div>
-            <div class="fcenter">
+            <div class='item3'>
                 <p><strong>Dim Sum</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
                     tempora nemo magnam officiis sapiente modi nisi incidunt! Quia, ut odio?<br>$5.95</p>
-
+            </div>
+            <div class='item4'>
                 <p><strong>Chicken Satay</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                     amet natus inventore minima id animi, dolorum laudantium exercitationem rem non?<br>$6.95</p>
             </div>
-            <div class="fright">
+            <div class="item5">
                 <p><strong>Stir Fry</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
                     tempora nemo magnam officiis sapiente modi nisi incidunt! Quia, ut odio?<br>$5.95</p>
-
-                <p><strong>Chicken Fried Rice</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            </div>
+            <div class='item6'>
+                <p><strong>Chicken Fried Rice</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde
                     amet natus inventore minima id animi, dolorum laudantium exercitationem rem non?<br>$6.95</p>
             </div>
         </div>
-        <hr class='hr-thick' />
-        <footer>
-            <p>123 Main St, Artichoke, NM, 77777 <br /><br />
-                Telephone: 555-5555</p>
-        </footer>
-        <script src="" async defer></script>
     </section>
+
+    <div class='container-fluid beverages'>
+        <table>
+            <thead>
+                <tr>
+                    <th>Beverages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>$2.25</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bottled Water</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td>Soda</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$1.05</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class='hr-thick bottom' />
+    <footer>
+        <p>123 Main St, Artichoke, NM, 77777 <br /><br />
+            Telephone: 555-5555</p>
+    </footer>
+    <script src="" async defer></script>
+
 </body>
 
 </html>

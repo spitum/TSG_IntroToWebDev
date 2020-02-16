@@ -13,32 +13,48 @@ header {
     margin-left: 5px;
 }
 
-nav {
-    display: flex;
-    padding: 5px;
-    margin: 5px;
-    flex-direction: row;
-    justify-content:flex-start;  
-}
 
-nav .nav-link {
-margin: 5px;
-}
+nav .nav-link:visited {
+    color: black;    
+} 
+
 
 nav .nav-link:hover {
     font-weight:bold;
     text-decoration: none; 
 }
 
-nav .nav-link:visited {
-    color: black;    
+.nav-link:active {
+    font-weight: bold;
 }
 
-nav .nav-link:active {
-    color: red; 
 
+
+ footer 
+{
+    text-align: center;
+}
+
+.hr-thick {  
+    top: 2px; 
+    border: none; 
+    height: 2px; 
+    background: black; 
+    margin-bottom: 1px; 
 } 
 
+.container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.jumbotron-fluid {
+    text-align: center;
+    font-family: monospace ;
+    background-color:beige;
+}
 
 figure {
     background-color: beige;
@@ -47,23 +63,4 @@ figure.item {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 15px;
-}
-/* footer 
-{
-    text-align: center;
-} */
-
-.hr-thick {  
-    top: 2px; 
-    border: none; 
-    height: 2px; 
-    background: black; 
-    margin-bottom: 5px; 
-} 
-
-.container {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-
 }

@@ -29,19 +29,11 @@ nav .nav-link:hover {
 }
 
 
-
  footer 
 {
     text-align: center;
 }
 
-.hr-thick {  
-    top: 2px; 
-    border: none; 
-    height: 2px; 
-    background: black; 
-    margin-bottom: 1px; 
-} 
 
 .container {
     width: 75%;
@@ -50,17 +42,22 @@ nav .nav-link:hover {
 
 }
 
+
 .jumbotron-fluid {
     text-align: center;
     font-family: monospace ;
-    background-color:beige;
+    background-color:#f7f6f0;
 }
 
 figure {
-    background-color: beige;
+    background-color: #f7f6f0;
 }
 figure.item {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 15px;
 }
+
+.carousel{
+    text-align: center;
+  }

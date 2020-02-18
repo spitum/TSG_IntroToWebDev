@@ -19,10 +19,9 @@ function validateEmail(inputText) {
 }
 
 function validatePhone(num) {
-    var phoneRe = /^((([0-9]{3}))|([0-9]{3}))[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/;
+    var phoneRe = /^\d{10}$/;
     var digits = num.value.replace(/\D/g, "");
-    console.log(digits)
-    if(num.value != '' && num.value.match(digits)) {
+    if(digits != '' && digits.match(phoneRe)) {
         return true;
     }
 
@@ -40,7 +39,7 @@ function validateName(str) {
     }
     else {
         alert('Name must be filled out')
-        str.focus()
+        str.focus();
         return false; 
     }
 
